@@ -8,7 +8,7 @@ import { checkedTask, deleteTask } from "../../hooks/reducer";
 import styles from './Task.module.css'
 import AddTask from "../AddTask/AddTask";
 
-export function Task({ title, description, id, checked, subTasks }: Task) {
+export function Task({ title, description, id, checked }: Task) {
   const [edit, setLocalEdit] = useState<boolean>(false);
   const [add, setAdd] = useState<boolean>(false)
   const dispatch = useAppDispatch()

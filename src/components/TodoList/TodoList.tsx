@@ -12,7 +12,7 @@ export default function TodoList() {
       <Typography>план</Typography>
       {tasks.map((task) => (
         !task.checked ?
-        <Task title={task.title} description={task.description} id={task.id} checked={task.checked} subTasks={task.subTasks} />: null
+        <Task title={task.title} description={task.description} id={task.id} checked={task.checked}  />: null
       ))}
       <Typography sx={{marginTop: '30px'}}>готово</Typography>
       {tasks.map((task) => (

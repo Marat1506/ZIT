@@ -3,5 +3,5 @@ export interface Task {
     description: string,
     id: number,
     checked: boolean
-    subTasks: Task[]
+    subTasks?: Task[]
 }
